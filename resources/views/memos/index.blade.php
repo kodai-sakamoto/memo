@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             メモ一覧
         </h2>
     </x-slot>
@@ -10,7 +10,7 @@
 
         <div class="grid gap-4">
             @foreach($memos as $memo)
-                <div class="p-4 bg-white dark:bg-gray-800 shadow rounded">
+                <div class="p-4 bg-white shadow rounded">
                     <h3 class="font-bold">{{ $memo->title }}</h3>
                     <p>{{ $memo->content }}</p>
                     @if($memo->image)
